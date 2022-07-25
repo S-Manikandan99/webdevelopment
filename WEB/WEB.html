@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/04d0341099.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="toggle"></div>
+        <img src="images/logo.png" alt="logo">
+    <div class="log">
+        <img src="images/user.png" alt="">
+        
+    </div>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Pro</a></li>
+        </ul>
+    </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+        document.onclick = function(e){
+            if(e.target.id !== 'sidebar' && e.target.id !=='toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active')
+            }
+        }
+        toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active')
+        }
+    </script>
+    <div id="fooder"></div>
+</body>
+</html>

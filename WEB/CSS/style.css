@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#header{
+    background-color: #00bcd4;
+    width: 100%;
+    height: 80px;
+    float: left;
+}
+#toggle{
+  position: fixed;
+  top: 80px;
+  width: 50px;
+  height: 100%;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toggle::before{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+#toggle::after{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+/* #toggle.active::before{
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after{
+  transform: translateY(0px) rotate(-45deg);
+} */
+/* #toggle{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background: #3cadc9;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toggle::before{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+#toggle::after{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+#toggle.active::before{
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after{
+  transform: translateY(0px) rotate(-45deg);
+} */
+img{
+    height: 80px;
+    background-color: #00bcd4;
+    float: left;
+    margin-left: 100px;
+}
+#sidebar{
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 290px;
+  height: 100vh;
+  background: #00bcd4;
+  transition: 0.5s;
+  margin-top: 80px;
+}
+#sidebar.active{
+  left: 0px;
+}
+#sidebar ul{
+  position: relative;
+  margin-top: 50px;
+}
+#sidebar ul li{
+  list-style: none;
+  display: inline-block;
+  width: 250px;
+  padding: 10px 20px;
+}
+#sidebar ul li:hover{
+  background: #3cadc9;
+  width: 10;
+}
+#sidebar ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.btn{ 
+    background-color: #b2ebf2;
+    color: black;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 5px 5px;
+    border: 2px solid rgb(153, 255, 255);
+    border-radius: 25px;
+    text-decoration: none;
+    list-style: none;
+}
+.btn:hover{
+    background-color: rgb(174, 255, 121);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+#contentbar{
+    background-color: rgb(247, 57, 57);
+    width:100%;
+    height: 890px;
+    float: right;
+}
+#fooder{
+    background-color: #00bcd4;
+    width: 100%;
+    height: 50px;
+}

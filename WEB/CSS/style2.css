@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Edu+TAS+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Cantainer */
+
+body{
+    background: linear-gradient(-90deg,#cfcfcf,#fff,#cfcfcf);
+    
+}
+
+/* Header CSS */
+
+#header{
+    background-color: #14213d;
+    width: 100%;
+    height: 80px;
+    float: left;
+}
+#header h1{
+    font-family: 'Alfa Slab One', cursive;
+    color: #FFF;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 7px;
+    padding: 0;
+}
+#header h6{
+    font-family: 'Edu TAS Beginner', cursive;
+    color: #FFF;
+    text-align: center;
+    margin-top: 0px;
+    letter-spacing: 7px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+/* Toggle Bar */
+
+#toggle{
+    position: fixed;
+    top: -55px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: #14213d;
+    cursor: pointer;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    float: left;
+    padding: 15px;
+}
+#toggle:hover{
+    padding: 0px;
+    top: -62px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+}
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+
+/* Side Menu Bar */
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 270px;
+    height: 100vh;
+    background-color: #14213d;
+    transition: 0.5s;
+    margin-top: 80px;
+    font-family: 'poppins', sans-serif;
+}
+#sidebar.active{
+    left: 0px;
+    width: 15%;
+}
+#sidebar ul{
+    position: relative;
+    margin-top: 10px;
+}
+#sidebar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    
+}
+#sidebar ul li:hover{
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0.678),rgba(0, 0, 0, 0.24));
+}
+#sidebar ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+}
+
+/* Login Button */
+
+.icon{
+    width: 100%;
+}
+.btn{ 
+    float: right;
+    display: flex;
+    margin-left: 200px;
+    padding: 6px 3px;
+    text-decoration: none;
+    list-style: none;
+    height: 50px;
+    margin-top: -65px;
+    margin-right: 15px;
+}
+.btn:hover{
+    padding: 4px 3px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/* toptab */
+
+#tabel{
+    margin-left: 18%;
+    background-color: rgba(0, 0, 0, 0.109);
+    width: 70%;
+    height:1000px;
+}
+.toptab{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.103),rgba(255, 255, 255, 0.342));
+    width: 98%;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 20px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+.toptab img{
+    width: 200px;
+}
+.perno{
+    float: right;
+    font-size: 15px;
+    padding: 0;
+}
+.perno p{
+    font-size: 18px;
+}
+.perno input{
+    margin: 0;
+    padding: 5px;
+    text-justify: auto;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+}
+.toptab form input{
+    margin-left: 60px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+}
+.toptab form{
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+#lowdow{
+    width: 100%;
+    height: 155px;
+    margin-right: 90px;
+    margin-left: 0px;
+}
+.toptab .low{
+    margin-top: 20px;
+    float: left;
+}
+.toptab .low textarea{
+    width: 400px;
+    height: 100px;   
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+}
+.toptab .dow{
+    margin-top: 20px;
+    float: right;
+}
+.toptab .dow textarea{
+    width: 400px;
+    height: 100px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+}
+.infermation{
+    margin: 10px 40px;
+}
+.infermation .isto{
+    float: left;
+}
+.infermation .isto p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.infermation .isto input{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+.infermation .vlfm{
+    float: left;
+    margin-left: 25%;
+}
+.infermation .vlfm p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.infermation .vlfm input{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+}
+.infermation .pvut{
+    float: right;
+}
+.infermation .pvut p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.infermation .pvut input{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 18px;
+} 
+.smallbar{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.363),rgba(255, 255, 255, 0.342));
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+}
+#databar{
+    margin-left: 40px;
+}
+.abar{
+    margin-top: 5px;
+    width: 100%;
+    height: 120px;
+}
+.abar .abarhl{
+    float: left;
+}
+.abar .abarhr{
+    margin-left: 40%;
+}
+#a123{
+    margin: 3px 0px 0px 0px;
+    font-size: 18px;
+}
+.abarl{
+    margin-top: 0px;
+    float: left;
+    padding: 5px;
+}
+.abar1radiobtn{
+    float: right;
+    margin-left: 10px;
+}
+.abar1radiobtn input{
+    margin-left: 10px;
+}
+.abar2{
+    margin-top: 8px;
+    float: left;
+    margin-left: -487px;
+    padding: 5px;
+}
+.abar2radiobtn{
+    float: right;
+    margin-left: 10px;
+}
+.abar2radiobtn input{
+    margin-left: 10px;
+}
+.abar3{
+    margin: 16px;
+    float: left;
+    margin-left: -1px;
+    padding: 5px;
+}
+.abar3radiobtn{
+    float: right;
+    margin-left: 10px;
+}
+.abar3radiobtn input{
+    margin-left: 10px;
+}
+.bbar{
+    margin-top: -60px;
+}
+.bbar .bbarhl{
+    float: left;
+}
+.bbar .bbarhr{
+    margin-left: 40%;
+}

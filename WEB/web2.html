@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Permit</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+    <div id="header">
+        <h1>WORK PERMIT</h1>
+        <h6>MACHINE SHOP</h6>
+    </div>
+    <div id="toggle"></div>
+    <img class="btn" src="images/user.png" alt="">
+    <div id="sidebar">
+        <ul>
+            <li><a href="#" >Work Permit</a></li>
+            <li><a href="#" >Incident Investigation</a></li>
+            <li><a href="#" >Change Password</a></li>
+            <li><a href="#" >Permit Report</a></li>
+            <li><a href="#" >Investigation Report</a></li>
+            <li><a href="#" >Settings</a></li>
+        </ul>
+    </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+
+        document.onclick = function(e)
+        {
+            if(e.target.id !== 'sidebar' && e.target.id !=='toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active')
+            }
+        }
+        
+        
+        toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active')
+        }
+    </script>
+        <div id="tabel">
+            <div class="toptab">
+                <img src="images/logo.png" alt="logo">
+                <div class="perno"><pre>
+                    <P>Permit No:</P><input type="text">
+                    <p>DI.No:RE-IMS-COM-SAFE-WPR-F-01</p></pre>
+                </div>
+                <br><br>
+                <div>
+                    <form>
+                         <input type="checkbox" name="Cold Work" value ="on">Cold Work
+                         <input type="checkbox" name="Work at height" value ="on">Work at height
+                         <input type="checkbox" name="Hot Work" value ="on">Hot Work
+                         <input type="checkbox" name="Confined space" value ="on">Confined space
+                         <input type="checkbox" name="Material Lifting & Shifting" value ="on">Material Lifting & Shifting
+                         <input type="checkbox" name="Others" value ="on">Others
+                    </form>
+                </div>
+            <div id="lowdow">
+                <div class="low">
+                    <h2>Location Of Work:</h2>
+                    <textarea name="locofwork" row ="5" cols="20"></textarea>
+                </div>
+                <div class="dow">
+                    <h2>Description of Work:</h2>
+                    <textarea name="desofwork" row ="5" cols="20"></textarea>
+                </div>
+            </div>
+
+        <div class="infermation">
+            <div class="isto">
+                <h2>Issued to:
+                </h2>
+                    <p>Name:</p>
+                    <input type="text">
+                    <p>Contact No:</p>
+                    <input type="text">
+            </div>
+            <div class="vlfm">
+                <h2>Valid From:</h2>
+                    <p>Date:</p>
+                    <input type="date">
+                    <p>Time:</p>
+                    <input type="time">
+            </div>
+            <div class="pvut">
+                <h2>Permit valid Up To:</h2>
+                    <p>Date:</p>
+                    <input type="date">
+                    <p>Time:</p>
+                    <input type="time">
+            </div>
+        </div>
+    </div>
+    <div class="smallbar">
+        <div id="databar">
+            <ol type="A">
+                    <div class="abar"><li>
+                        <div class="abarhl"><h3>Preparation of the job</h3></div>
+                        <div class="abarhr"><h3>(Safety Measures taken by the work place in charge - Initiator Department)</h3></div>
+                        <div id="a123"><ol type="1">
+                            <div class="abarl"><li>Equipment / pipeline stopped from service?
+                                <div class="abar1radiobtn">
+                                    <input type="radio" name="Yes" value ="on">Yes
+                                    <input type="radio" name="No" value ="on">No
+                                    <input type="radio" name="NA" value ="on">NA
+                                </div></li>
+                            </div>
+                            <br>
+                            <div class="abar2"><li>Equipment / pipeline emptied?
+                                <div class="abar2radiobtn">
+                                    <input type="radio" name="Yes" value ="on">Yes
+                                    <input type="radio" name="No" value ="on">No
+                                    <input type="radio" name="NA" value ="on">NA
+                                </div></li>
+                            </div>
+                            <br>
+                            <div class="abar3"><li>Unwanted materials Removed?
+                                <div class="abar3radiobtn">
+                                    <input type="radio" name="Yes" value ="on">Yes
+                                    <input type="radio" name="No" value ="on">No
+                                    <input type="radio" name="NA" value ="on">NA
+                                </div></li>
+                            </div></ol>
+                        </div></li>
+                        <!--<div class="abarrh">
+
+                        </div>-->
+                    </div>
+                <br><br><br><br>
+                    <div class="bbar"><li>
+                        <div class="bbarhl"><h3>Risk Assessment and control</h3></div>
+                        <div class="bbarhr"><h3>(Safety Measures taken by the Execution Department)</h3></div>
+                    </div>
+                    <ol type="I">
+                        <li>Hot work - Fire Potential - Risk Control measures</li>
+                        <li>Electrical Hazard control</li>
+                        <li>Work at Height - Risk control measures</li>
+                        <li>Lifiting And Shifting - Risk control measures</li>
+                        <li> Control space Entry - Risk control measures</li>
+                        <li>Gas monitoring</li>
+                    </ol>
+                </li>
+                <li><h3>Safety Officer to check and prescribe additional Safety measures to be followed</h3>
+                </li>
+                <li><h3>Issue & Declaration</h3>
+                </li>
+                <li><h3>Completion of Work</h3>
+                </li>
+           </ol>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
